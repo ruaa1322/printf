@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _printf - mimics printf
  * @format: identifier look for
@@ -30,7 +31,7 @@ int _printf(const char *format, ...)
 			}
 			j--;
 		}
-		_putchar(furmat[i]);
+		_putchar(format[i]);
 		i++;
 		len++;
 	}
